@@ -46,4 +46,5 @@ function signChack(){
     }
 };
 
-window.addEventListener("load", showItem , signChack);
+window.addEventListener("load", showItem);
+window.addEventListener("load", signChack);
