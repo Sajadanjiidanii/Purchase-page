@@ -12,7 +12,7 @@ function addToCart(){
     let test = JSON.parse(localStorage.getItem("productInfo"));
     CartBox.push(test);
     localStorage.setItem("CartBox" , JSON.stringify(CartBox));
-    // location.href = ;
+    location.href = "https://sajadanjiidanii.github.io/ColorShop/";
 }
 
 window.addEventListener("load",showItem);
