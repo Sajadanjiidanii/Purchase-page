@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+body{
+    background-color: rgb(229, 229, 229);
+}
+a{
+    text-decoration: none;
+}
+/* nav top style */
+nav#menu{
+    display: grid;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+/* menu top */
+
+div#menu-top{
+    align-items: center;
+    margin-bottom: 20px;
+    grid-gap: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    grid-template-columns: 10% 1fr 15%;
+}
+img#logo-top{
+    width: 140px;
+    height: 80px;
+    position: relative;
+    right: -10px;
+}
+div#searchbox{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 5%;
+    grid-template-rows: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgb(229, 229, 229);
+}
+input{
+    padding-right: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.bx-search-alt-2{
+    cursor: pointer;
+    font-size: 27px;
+    align-self: center;
+    color: rgb(118, 118, 118);
+}
+.bx-search-alt-2:hover{
+    color: black;
+}
+div#login-signup{
+    position: absolute;
+    margin: 2px -75px 0 0;
+    color: rgb(118, 118, 118);
+    left: 10px;
+}
+div#login-signup > span{
+    cursor: pointer;
+}
+div#login-signup > span:hover{
+    color: black;
+}
+#cart-icon{
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+#login , #signup , #cart-icon{
+    color: rgb(118, 118, 118);
+}
+#login:hover , #signup:hover , #cart-icon:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* sub menu */
+ul#items{
+    display: grid;
+    list-style: none;
+    font-weight: 600;
+    grid-auto-flow: column;
+    color: rgb(118, 118, 118);
+    justify-content: space-evenly;
+}
+ul#items li a{
+    font-weight: 600;
+    color: rgb(118, 118, 118);
+}
+ul#items li a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* container content */
+main{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+#main-Container{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 96%;
+    height: 96%;
+}
+
+#img-Container{
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 60%;
+    height: 80%;
+}
+#img-Container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#information-Container{
+    display: grid;
+    grid-template-rows: repeat(3,20%) 1fr;
+    justify-self: start;
+    border-radius: 20px;
+    width: 60%;
+    height: 80%;
+}
+#information-Container H3{
+    align-self: center;
+
+}
+#buyBox{
+    align-self: flex-end;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    color: green;
+    border: 1.5px solid green;
+    background-color: white
+}
+#buyBox:hover{
+    color: white;
+    background-color: green;
+}
+/* footer */
+#footerContent{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    grid-template-columns: 20% 40% 25%;
+    height: auto;
+    margin-top: 50px;
+    background-color: white;
+}
+#footerContent > ul{
+    list-style: none;
+    line-height: 40px;
+    color: rgb(118, 118, 118);
+}
+#footerContent > ul > li:first-child{
+    font-weight: 600;
+    color: black;
+}
+#menu-links{
+    display: grid;
+}
+#menu-links > a{
+    color: rgb(118, 118, 118);
+}
+#menu-links > a:hover{
+    color: black;
+}
+#enamadImg{
+    width: 200px;
+}
+
+/* class */
+.hide{
+    display: none;
+}
+.green{
+    color: green;
+}

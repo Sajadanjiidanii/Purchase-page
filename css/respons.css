@@ -1,0 +1,106 @@
+@media ( min-width : 1386px ){
+    #information-Container{
+        max-width: 30%;
+        max-height: 40%;
+    }
+}
+@media ( max-width : 900px ){
+    div#menu-top{
+        grid-template-columns: 10% 1fr 17%;
+    }
+    img#logo-top{
+        right: -25%;
+    }
+} 
+@media ( max-width : 820px ){
+    #img-Container{
+        width: 80%;
+    }
+    #information-Container{
+        width: 70%;
+    }
+}
+@media ( max-width : 770px ){
+    div#menu-top{
+        grid-template-columns: 10% 1fr 19%;
+    }
+}
+@media ( max-width : 700px ){
+    div#menu-top{
+        grid-template-columns: 10% 1fr 22%;
+    }
+    img#logo-top{
+        right: -35px;
+    }
+}
+@media ( max-width : 685px ){
+    div#searchbox{
+        grid-template-columns: 1fr 10%;
+    }
+}
+@media ( max-width : 555px ){
+    #items{
+        font-size: 10px;
+    }
+}
+@media ( max-width : 657px ){
+    #main-Container{
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 58%;
+    }
+    #img-Container{
+        width: 66%;
+    }
+    #information-Container{
+        margin-top: -20px;
+        justify-self: center;
+    }
+    #footerContent{
+        text-align: center;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+    }
+    #enamadImg{
+        margin: 0 auto;
+    }
+}
+@media (max-width : 600px){
+    div#menu-top{
+        grid-template-columns: 10% 1fr 26%;
+    }
+}
+@media (max-width : 500px){
+    div#menu-top{
+        grid-template-columns: 10% 1fr 25%;
+    }
+    img#logo-top{
+        width: 120px;
+        right: -35px;
+    }
+    #login-signup{
+        font-size: 10px;
+    }
+    #cart-icon{
+        font-size: 13px;
+    }
+    #searchbox{
+        width: auto;
+        height: 30px;
+        padding: 0 10px;
+    }
+}
+@media (max-width : 400px){
+    div#menu-top{
+        grid-template-columns: 10% 1fr 33%;
+    }
+    #login-signup{
+        font-size: 10px;
+    }
+    img#logo-top{
+        width: 100px;
+        height: 60px;
+        top: 5px;
+        right: -30px;
+    }
+}
