@@ -15,4 +15,35 @@ function addToCart(){
     location.href = "https://sajadanjiidanii.github.io/ColorShop/";
 }
 
-window.addEventListener("load",showItem);
+/// sign in chacke ///
+
+const loginSignup = $.querySelector("#login-signup");
+const logIn = $.querySelector("#login");
+const signUp = $.querySelector("#signup");
+
+function exitAccount(){
+    userAccount.style.display = "none";
+    exitAccountBtn.style.display = "none";
+    logIn.style.display = "inline";
+    signUp.style.display = "inline";
+    localStorage.setItem("ShowName","No");
+}
+
+function signChack(){
+    let isName = localStorage.getItem("Name");
+    let userName = JSON.parse(localStorage.getItem("Name"));
+    let showName = localStorage.getItem("ShowName");
+
+    if( isName ){
+        if( showName == "Yes"){
+            logIn.style.display = "none";
+            signUp.style.display = "none";
+            loginSignup.insertAdjacentHTML("afterbegin","<span id=\"userAccount\">" + userName + "</span><span id=\"exitAccountBtn\"> / خروج </span>");
+            const userAccount = $.querySelector("userAccount");
+            const exitAccountBtn = $.querySelector("#exitAccountBtn");
+            exitAccountBtn.addEventListener("click",exitAccount);
+        }
+    }
+};
+
+window.addEventListener("load", showItem , signChack);
