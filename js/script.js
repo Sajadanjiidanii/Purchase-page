@@ -8,10 +8,9 @@ function showItem(){
 }
 
 function addToCart(){
-    CartBox.push(JSON.parse(localStorage.getItem("CartBox")));
-    let test = JSON.parse(localStorage.getItem("productInfo"));
-    CartBox.push(test);
-    localStorage.setItem("CartBox" , JSON.stringify(CartBox));
+    let productInfo = JSON.parse(localStorage.getItem("productInfo"));
+    CartBox.push(productInfo);
+    localStorage.setItem("bascketCart",JSON.stringify(CartBox));
     location.href = "https://sajadanjiidanii.github.io/ColorShop/";
 }
 
