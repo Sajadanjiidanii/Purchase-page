@@ -14,7 +14,7 @@ function addToCart(){
     let productInfo = JSON.parse(localStorage.getItem("productInfo"));
     CartBox.push(productInfo);
     localStorage.setItem("bascketCart",JSON.stringify(CartBox));
-    location.href = "file:///C:/Users/BinoBuyo/Desktop/project/color%20shop/Home%20Page/index.html";
+    location.href = "https://sajadanjiidanii.github.io/ColorShop/";
 }
 
 /// sign in chacke ///
