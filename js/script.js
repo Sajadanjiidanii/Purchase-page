@@ -8,10 +8,13 @@ function showItem(){
 }
 
 function addToCart(){
+    if( JSON.parse(localStorage.getItem("bascketCart")) != null ){
+        CartBox = JSON.parse(localStorage.getItem("bascketCart"));
+    }
     let productInfo = JSON.parse(localStorage.getItem("productInfo"));
     CartBox.push(productInfo);
     localStorage.setItem("bascketCart",JSON.stringify(CartBox));
-    location.href = "https://sajadanjiidanii.github.io/ColorShop/";
+    location.href = "file:///C:/Users/BinoBuyo/Desktop/project/color%20shop/Home%20Page/index.html";
 }
 
 /// sign in chacke ///
